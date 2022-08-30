@@ -1,0 +1,43 @@
+export default {
+	state:{
+		footer_nav:[
+			{
+				name:'首页',
+				name_code:'home',
+				icon:'/static/menu/a1.png',
+				select_icon:'/static/menu/a2.png',
+				size:'small'
+			},
+			{
+				name:'广场',
+				name_code:'public',
+				icon:'/static/menu/b1.png',
+				select_icon:'/static/menu/b2.png',
+				size:'small'
+			},
+			{
+				name:'消息',
+				name_code:'message',
+				icon:'/static/menu/c1.png',
+				select_icon:'/static/menu/c2.png',
+				size:'small'
+			},
+			{
+				name:'我的',
+				name_code:'user',
+				icon:'/static/menu/d1.png',
+				select_icon:'/static/menu/d2.png',
+				size:'small'
+			},
+		],
+		now_page_index:0,
+	},
+	mutations:{
+		change_nav_list(state,data){
+			state.footer_nav = data;
+		},
+		change_page(state,index){
+			state.now_page_index = index;
+		}
+	}
+}
